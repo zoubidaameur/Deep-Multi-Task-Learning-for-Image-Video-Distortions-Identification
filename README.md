@@ -6,3 +6,20 @@ Identifying distortions in images and videos is important and useful in various 
 ![](https://github.com/zoubidaameur/Deep-Multi-Task-Learning-for-Image-Video-Distortions-Identification/blob/main/image-1.png)
 
 
+## Overview
+The source code is available in a notebook.
+
+
+## Usage
+* For each dataset, upload its corresponding labels to the notebook. (Can be found in folder "data")
+* Run the cells in order
+1. Import required libraries :  all required packages to run the code are imported.
+3. Load dataset : download a specific quality dataset; among the ones used in the paper.
+4. Data generator :  extract and pre-process patches from each image to be fed into the model.
+5. Build the model : build the multi-task learning model.
+6. Train model : call Data generator and Build model to perform training on 80% of dataset.
+7. Test model : perform test using training weights on left 20% of dataset.
+8. Evaluate test : evaluate the performance of the model on test set.
+
+
+
